@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #efefbb, #d4d3dd);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: rgb(19, 20, 20);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 10px rgba(39, 40, 44, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: rgb(19, 20, 20);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 1200px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(39, 40, 44, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 5rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border-radius: 15px solid #cccbd4;
+  height: 180px;
+  width: 180px;
+}
+
+.user-info {
+  color: rgb(0, 0, 0);
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.user-info p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 800px;
+}
+
+.info-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.info-list strong {
+  margin-left: 0.3rem;
+}
+
+.repo {
+  color: rgb(127, 131, 89);
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}

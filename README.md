@@ -1,2 +1,2 @@
 # GitHub-Search
-A project using the Github REST API to fetch profiles and their data
+A project using the Github REST API to fetch user profiles and their data
